@@ -29,7 +29,7 @@ public class ExceptionFilter implements HandlerExceptionResolver {
 			resoult.setInfo(ex.getMessage());
 		}else if(ex instanceof NoLoginExecption){
 			resoult.setInfo(ex.getMessage());
-			mv.setViewName("/user/login.jsp");
+			mv.setViewName("/user/login");
 		}else {
 			resoult.setInfo("操作失败！");
 		}
