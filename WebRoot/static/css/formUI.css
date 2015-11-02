@@ -1,0 +1,112 @@
+*{ margin: 0px; padding: 0px; color:#777; font-family: "微软雅黑","宋体",Arial;font-size: 16px; font-weight: normal;}
+
+.has-error{ 
+	border: none;
+	color: #ff6a6a;
+	outline:red Solid 1px;
+}
+
+.btn{
+	color: #ffffff;
+	border: none;
+	padding: 4px 15px;
+	position: relative;
+	background:#038586;
+	margin: 0px 10px;
+}
+
+.alignCenter{
+	text-align: center;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+input[type=text].hasDatepicker {
+    background: #ffffff url('../images/input-date.png') right center no-repeat;
+}
+
+ul{ 
+	list-style:none;
+}
+
+img{ 
+	border:0px; border:none;
+}
+
+a{ 
+	border:none; text-decoration:none; cursor:pointer;
+}
+
+input[type=text]:focus,input[type=password]:focus{ 
+	outline:#038586 Solid 1px;
+}
+
+input{
+	font-size: 16px;
+    padding: 2px 7px;
+    border: 1px solid #cccccc;
+    line-height: 1.5;
+    letter-spacing: normal;
+    word-spacing: normal; 
+    text-align: start;
+}
+
+input[type=text],input[type=password]{
+    width: 180px;
+    height: 27px;
+}
+
+label {
+    height: 30px;
+    margin-bottom: 0;
+    padding: 4px 5px 0;
+    text-align: right;
+}
+
+label.required:after {
+    content: ' *';
+    color: red;
+    vertical-align: sub;
+}
+
+select {
+    width: 195px;
+    height: 33px;
+    padding: 2px 7px;
+}
+
+/**
+ * table
+ */
+ td{
+ 	padding: 3px;
+ }
+
+.table{
+    width: 100%;
+    background: #fafafa;
+    border-collapse: collapse;
+  	border-spacing: 0;
+  	padding: 10px;
+}
+
+.table thead th,thead td {
+    padding: 5px 0;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-bottom: 2px solid #d55553;
+}
+
+.table td {
+    padding: 4px;
+}
+
+.table tbody tr td {
+    border: 1px solid #dddddd;
+}

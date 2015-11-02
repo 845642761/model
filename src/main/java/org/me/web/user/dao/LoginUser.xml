@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="org.me.web.user.dao.ILoginUserDao">
+	<insert id="save" parameterType="org.me.web.user.entity.LoginUser">
+		insert into mo_loginUser(strLoginId,strPassword,nState)
+			values(#{strLoginId},#{strPassword},#{nState})
+	</insert>
+	
+	<select id="selectSize" parameterType="org.me.web.user.entity.LoginUser" resultType="Integer">
+		select count(1) from mo_loginUser
+		<where>
+			<if test="strLoginId !=null and strLoginId != ''">
+				strLoginId=#{strLoginId}
+			</if>
+		</where>
+	</select>
+	
+	<!-- 登录 -->
+	<select id="get" parameterType="String" resultType="org.me.web.user.entity.LoginUser">
+		select * from mo_loginUser where strLoginId=#{strLoginId}
+	</select>
+</mapper>
